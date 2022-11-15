@@ -1,1 +1,22 @@
-All parts implemented but clipping.
+- No-Clipping Algorithm Implemented.
+
+- How to Run, follow command: 
+  - mkdir build 
+  - cd build 
+  - cmake ..
+  - make -j4
+  - ./Assignment3
+  - Choose your model when prompted (** IMPORTANT! Texture mapping is only on the sphere)
+
+- Commands and Functionality:
+  - Use the space bar to switch between GPU (openGL code) to CPU (my built rasterization pipeline using barycentric interpolation and z_buffer algorithm)
+  - '0' key : random color per triangle 
+  - '1' key : random color per vertex, color is then interpolated
+  - '2' key: color is attenuated based on the depth of the vertex from the original camera position
+  - 'w', 's' : move closer, futher away respectively
+  - 'a', 'd' : change object angle by rotating object
+  - FOR SPHERE ONLY:
+    - 't' : Switches to texture mapped sphere with wrap around functionality
+    - 'n' : nearest nieghbor texture mapping
+    - 'l' : bilinear interpolationn texture mapping
+    - 'm' : mipmapped texture mapping
